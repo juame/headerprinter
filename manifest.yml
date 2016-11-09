@@ -1,0 +1,10 @@
+---
+applications:
+ - name: headerprinter
+   memory: 64M
+   instances: 1
+   command: headerprinter
+   buildpack: https://github.com/cloudfoundry/go-buildpack.git
+   env:
+     GOVERSION: go1.7
+     GOPACKAGENAME: github.com/juame/headerprinter
